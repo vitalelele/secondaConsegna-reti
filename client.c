@@ -7,12 +7,14 @@
     #include <sys/socket.h>
     #include <arpa/inet.h>
     #include <unistd.h>
+    #include <netdb.h>
 #endif // questo if defined controlla che l'OS sia win32 piuttosto che UNIX
 
 // librerie standard per ambo gli OS
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h> 
+#include <string.h>
+#include <ctype.h>  
 #define ECHOMAX 255
 
 void ClearWinSock(){

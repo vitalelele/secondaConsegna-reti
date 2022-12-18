@@ -7,12 +7,14 @@
     #include <sys/socket.h>
     #include <arpa/inet.h>
     #include <unistd.h>
+    #include <netdb.h>
 #endif // questo if defined controlla che l'OS sia win32 piuttosto che UNIX
 
 // librerie standard per gli OS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h> 
+#include <ctype.h> 
 
 #define PORTA_SERVER 9069  // definiamo la porta server da utilizzare
 #define MAX_CONNESSIONI 5 // definiamo un limite massimo di connessioni
